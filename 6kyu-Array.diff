@@ -1,0 +1,6 @@
+function array_diff(a, b) {
+  return a.reduce( (result, n) => {
+    b.includes(n) || result.push(n); 
+    return result;
+  }, []);
+}
